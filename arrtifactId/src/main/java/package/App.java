@@ -1,5 +1,3 @@
-package package;
-
 /**
  * Hello world!
  */
