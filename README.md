@@ -77,4 +77,7 @@ public class CadastrarPesoaTest {
 }
 ```
 
-Please pay see with attention all the things, like the `imports` , the `annotations`, the method call `Mockito.verifyNoInteractions(this.log);` and `the comments`.
+Please pay see with attention all the things, like the `imports` , the `annotations`, the method call `Mockito.verifyNoInteractions(this.log);` and `the comments`. Please pay attention that we maybe update the source code of this class, but the source code above is the source code that I wanna you understand for a basic `spy`.
+
+You can also inspect the order of the calls:
+![image explaining in order verification](images/in-order.png)
