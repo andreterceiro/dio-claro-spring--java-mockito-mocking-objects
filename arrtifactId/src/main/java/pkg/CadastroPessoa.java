@@ -3,7 +3,7 @@ package pkg;
 import java.time.LocalDate;
 
 public class CadastroPessoa {
-    private ApiDosCorreios apiDosCorreios;
+    private final ApiDosCorreios apiDosCorreios;
 
     public CadastroPessoa(final ApiDosCorreios apiDosCorreios) {
         this.apiDosCorreios = apiDosCorreios;
