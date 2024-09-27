@@ -1,3 +1,5 @@
+package pkg;
+
 /**
  * Hello world!
  */
