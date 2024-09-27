@@ -10,3 +10,9 @@ First of all, I created the project:
 
 Without annotations, the teacher showed other way to use Mockito:
 ![other way to use Mockito](images/other-way-to-use-mockito.png)
+
+A test teached in the class:
+![testing with Mockito](images/testing-with-mockito.png)
+
+Teacher passed us in the class this external references:
+![external references](images/external-references.png)
