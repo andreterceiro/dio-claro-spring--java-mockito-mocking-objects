@@ -43,7 +43,18 @@ public class CadastrarPesoaTest {
         // See, at this point we still not used the log object in cadsatroPesssoa.cadastrarPessoa();
         Mockito.verifyNoInteractions(this.log);
         cadastroPessoa.adicionarLogger(this.log);
-        cadastroPessoa.cadastrarPessoa("André", "123", LocalDate.now(), "32244000");
+
+        String nome = "André";
+        String documento = "123";
+        LocalDate nascimento = LocalDate.now();
+        String cep = "32244000";
+
+        cadastroPessoa.cadastrarPessoa(nome, documento, nascimento, cep);
+
+        Mockito.verify(this.log).log(CadastroPessoa.MENSAGEM_LOG_GENERICA);
+
+        // "Not a mock" error to next line
+        // Mockito.verify(cadastroPessoa).cadastrarPessoa(nome, documento, nascimento, cep);
 
         // But here we already used. So you will get an error if you uncomment this line
         // Mockito.verifyNoInteractions(this.log);
