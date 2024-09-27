@@ -81,3 +81,5 @@ Please pay see with attention all the things, like the `imports` , the `annotati
 
 You can also inspect the order of the calls:
 ![image explaining in order verification](images/in-order.png)
+
+In the previous image is cool if you verify the details, like the annotation "`@Spy`" and the call to "`ArgumentMatchers.anyInt()`". 
