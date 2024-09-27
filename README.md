@@ -82,4 +82,10 @@ Please pay see with attention all the things, like the `imports` , the `annotati
 You can also inspect the order of the calls:
 ![image explaining in order verification](images/in-order.png)
 
-In the previous image is cool if you verify the details, like the annotation "`@Spy`" and the call to "`ArgumentMatchers.anyInt()`". 
+In the previous image is cool if you verify the details, like the annotation "`@Spy`" and the call to "`ArgumentMatchers.anyInt()`".
+
+In the next image we show how we can verify the number of times a method is called. The use can be more useful, like as example a verification of a method that is called by another method:
+![counting method calls](images/count.png)
+
+External references of the teacher when we are talking about a `spy`:
+![spy external references](images/spy-external-references.png)
