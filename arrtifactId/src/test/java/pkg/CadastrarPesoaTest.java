@@ -43,7 +43,7 @@ public class CadastrarPesoaTest {
         // See, at this point we still not used the log object in cadsatroPesssoa.cadastrarPessoa();
         Mockito.verifyNoInteractions(this.log);
         cadastroPessoa.adicionarLogger(this.log);
-        Pessoa pessoa = cadastroPessoa.cadastrarPessoa("André", "123", LocalDate.now(), "32244000");
+        cadastroPessoa.cadastrarPessoa("André", "123", LocalDate.now(), "32244000");
 
         // But here we already used. So you will get an error if you uncomment this line
         // Mockito.verifyNoInteractions(this.log);
