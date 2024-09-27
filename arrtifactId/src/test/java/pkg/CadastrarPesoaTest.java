@@ -27,5 +27,10 @@ public class CadastrarPesoaTest {
         assertEquals("André", pessoa.getNome());
         assertEquals("123", pessoa.getDocumento());
         assertEquals(LocalDate.now(), pessoa.getNascimento());
+        
+        // Testing mocked things with Mockito
+        assertEquals(pessoa.getEndereco().getBairro(), "Belém");
+        assertEquals(pessoa.getEndereco().getCidade(), "São Paulo");
+        assertEquals(pessoa.getEndereco().getUf(), "SP");        
     }
 }
