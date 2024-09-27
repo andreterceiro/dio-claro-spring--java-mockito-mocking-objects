@@ -63,4 +63,16 @@ public class CadastrarPesoaTest {
         // have the anotation @Mock nor @Spy as example)
         // Mockito.verifyNoInteractions(new Log());
     }
+
+    @Test
+    void validarQuantidadeChamadas() {
+        this.log.count();
+        this.log.count();
+        this.log.count();
+
+        Mockito.verify(
+            this.log,
+            Mockito.times(3)
+        ).count();
+    }
 }
