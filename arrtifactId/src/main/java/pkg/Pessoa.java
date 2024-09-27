@@ -8,11 +8,14 @@ public class Pessoa {
     private LocalDate nascimento;
     private DadosLocalizacao endereco;
 
-    public Pessoa(String documento, DadosLocalizacao endereco, LocalDate nascimento, String nome) {
+    public Pessoa(String documento, LocalDate nascimento, String nome) {
         this.documento = documento;
-        this.endereco = endereco;
         this.nascimento = nascimento;
         this.nome = nome;
+    }
+
+    public void adicionarDadosEndereco(DadosLocalizacao endereco) {
+        this.endereco = endereco;
     }
 
     public String getNome() {
