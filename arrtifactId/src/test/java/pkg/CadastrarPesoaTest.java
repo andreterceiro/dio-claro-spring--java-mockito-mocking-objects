@@ -9,6 +9,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import static org.mockito.ArgumentMatchers.anyString;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.MockedStatic;
 import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -94,4 +95,11 @@ public class CadastrarPesoaTest {
         Assertions.assertEquals(pessoa.getEndereco().getBairro(), dadosLocalizacao.getBairro());
         Assertions.assertEquals(pessoa.getEndereco().getCidade(), dadosLocalizacao.getCidade());
     }
-}
+
+    @Test
+    void testandoMetodosEstaticos() {
+        MockedStatic<Log> mockedStatic = Mockito.mockStatic(Log.class);
+        mockedStatic.when(Log::returnError).thenReturn("test");
+        Assertions.assertEquals("test", Log.returnError());
+    }        
+ }
