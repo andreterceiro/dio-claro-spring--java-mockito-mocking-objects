@@ -109,3 +109,12 @@ Test:
 
 Here I show a alternative way to test `exceptions`:
 ![alternative way to test exceptions](images/alternativeToTestExceptions.png)
+
+Here the teacher showed `doNothing` and the case when was (without `doNothing`) to be throwed and exception because the request the balance was 3000 and the operation evolves 3500:
+
+![condition](images/condition.png)
+
+![do nothing](images/do-nothing.png)
+
+External references to forcing a return or throw an exception:
+![external references to forcing a return or throw an exception](images/external-references-to-force-a-return-or-throw-an-exception.png)
