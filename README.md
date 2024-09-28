@@ -118,3 +118,15 @@ Here the teacher showed `doNothing` and the case when was (without `doNothing`) 
 
 External references to forcing a return or throw an exception:
 ![external references to forcing a return or throw an exception](images/external-references-to-force-a-return-or-throw-an-exception.png)
+
+Related to static method testing, [this video class](https://web.dio.me/course/desenvolvendo-testes-utilizando-mockito/learning/d7d7911b-d6b9-43e9-8ee1-a3643d92cfc9?back=/track/coding-the-future-claro-java-spring-boot&tab=undefined&moduleId=undefined) was incompĺete. The class ends suddenly.
+
+I need to "manually" complete the code. I used [this reference](https://www.baeldung.com/mockito-mock-static-methods).
+
+Please see the code:
+
+1- Class with static method to be tested:
+![class with static method to be tested](images/class-with-static-method-to-be-tested.png)
+
+2- Test code:
+![static method test code](images/static-method-test-code.png)
