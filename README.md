@@ -105,10 +105,10 @@ Requisite: `apiCorreios` needs to be a mock (please see the `@Mock` annotation):
 ![api correios mock](images/api-correios-mock.png)
 
 Test:
-![forcing a specific return or an exception](images/forcingReturnOrException.png)
+![forcing a specific return or an exception](images/forcing-return-or-exception.png)
 
 Here I show a alternative way to test `exceptions`:
-![alternative way to test exceptions](images/alternativeToTestExceptions.png)
+![alternative way to test exceptions](images/alternative-to-test-exceptions.png)
 
 Here the teacher showed `doNothing` and the case when was (without `doNothing`) to be throwed and exception because the request the balance was 3000 and the operation evolves 3500:
 
