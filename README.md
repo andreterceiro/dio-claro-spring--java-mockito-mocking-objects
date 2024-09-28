@@ -130,3 +130,13 @@ Please see the code:
 
 2- Test code:
 ![static method test code](images/static-method-test-code.png)
+
+# References
+
+## Github repository of the teacher
+
+Please see [this link](https://github.com/willyancaetano/mockito-exemplos)
+
+## Slides presented in the class
+
+[Slides](slides-mockito.pptx)
