@@ -79,13 +79,13 @@ public class CadastrarPesoaTest {
     }
 
     @Test
-    void testingForcingException() {
+    void forcandoException() {
         Mockito.when(this.apiDosCorreios.buscarDadosComBaseNoCep(anyString())).thenThrow(IllegalArgumentException.class);
         Assertions.assertThrows(IllegalArgumentException.class, () -> cadastroPessoa.cadastrarPessoa("andré", "111", LocalDate.now(), "32244000"));
     }
 
     @Test
-    void testingForcingSpecificReturn() {
+    void forcandoRetornoEspecifico() {
         DadosLocalizacao dadosLocalizacao = new DadosLocalizacao("jardim sei lá", "Paraíba", "apto 25", "Rua Xexé", "PB");
 
         Mockito.when(this.apiDosCorreios.buscarDadosComBaseNoCep(anyString())).thenReturn(dadosLocalizacao);
