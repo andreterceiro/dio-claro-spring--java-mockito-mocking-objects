@@ -92,3 +92,20 @@ External references of the teacher when we are talking about a `spy`:
 
 Related to capture arguments, I did not developed a code because this feature does not seems very interesting to me. But the code teached in the class ("main" code):
 ![capturing arguments - code](images/capturing-arguments-code.png)
+
+The next part, about `forcing a return or a throw` seemed more interesting to me. The scenario is one when I wanna force a return or a throw in a object that is used by an object that I call. In other words:
+
+- I call `cadastroPessoa.cadastrarPessoa()`;
+- This method uses `apiCorreios.buscarDadosComBaseNoCep()`;
+- I can force the return of `apiCorreios.buscarDadosComBaseNoCep()` or force that an exception be thrown;
+- But I never call manually call `apiCorreios.buscarDadosComBaseNoCep()`. This method is called by `cadastroPessoa.cadastrarPessoa()`;
+- `cadastroPessoa.cadastrarPessoa()`, that we call, return a `Pessoa`. Then we compare the returned `Pessoa..getEndereco().getBairro()` (example) with the return that we forced to `apiCorreios`;
+
+Requisite: `apiCorreios` needs to be a mock (please see the `@Mock` annotation):
+![api correios mock](images/api-correios-mock.png)
+
+Test:
+![forcing a specific return or an exception](images/forcingReturnOrException.png)
+
+Here I show a alternative way to test `exceptions`:
+![alternative way to test exceptions](images/alternativeToTestExceptions.png)
