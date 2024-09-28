@@ -89,3 +89,6 @@ In the next image we show how we can verify the number of times a method is call
 
 External references of the teacher when we are talking about a `spy`:
 ![spy external references](images/spy-external-references.png)
+
+Related to capture arguments, I did not developed a code because this feature does not seems very interesting to me. But the code teached in the class ("main" code):
+![capturing arguments - code](images/capturing-arguments-code.png)
